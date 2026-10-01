@@ -131,6 +131,29 @@ st.markdown(
 .stApp .tarjeta .rom {color:#7c3aed !important;}
 .stApp .tarjeta .num {color:#0ea5e9 !important;}
 .stApp .grande, .stApp .mini {color:#7c3aed !important;}
+/* Botones: fondo morado y texto blanco siempre */
+.stApp .stButton button,
+.stApp [data-testid="stFormSubmitButton"] button,
+.stApp [data-testid^="stBaseButton"] {
+  background:linear-gradient(90deg,#8b5cf6,#38bdf8) !important;
+  border:none !important;border-radius:16px !important;
+  box-shadow:0 4px 10px rgba(124,58,237,.25);}
+.stApp .stButton button *,
+.stApp [data-testid="stFormSubmitButton"] button *,
+.stApp [data-testid^="stBaseButton"] * {color:#ffffff !important;font-weight:700;}
+/* Campos de texto, listas y desplegables: fondo blanco y letra oscura */
+.stApp input, .stApp textarea {background:#ffffff !important;color:#334155 !important;
+  -webkit-text-fill-color:#334155 !important;}
+.stApp [data-baseweb="input"], .stApp [data-baseweb="base-input"],
+.stApp [data-baseweb="select"] > div {background:#ffffff !important;color:#334155 !important;
+  border-radius:12px;}
+.stApp [data-baseweb="select"] * {color:#334155 !important;}
+.stApp [data-testid="stNumberInput"] button {background:#f3e8ff !important;}
+.stApp [data-testid="stNumberInput"] button * {color:#5b21b6 !important;}
+.stApp [data-testid="stExpander"] {background:#ffffff;border-radius:14px;}
+.stApp [data-testid="stExpander"] summary *,
+.stApp [data-testid="stExpander"] p {color:#5b21b6 !important;}
+.stApp [data-testid="stForm"] {background:rgba(255,255,255,.6);border-radius:18px;}
 </style>
 <div class="titulo">
   <h1>🦄 El Reino de los Números Romanos ✨</h1>
