@@ -115,6 +115,22 @@ st.markdown(
 .caja {background:white;color:#334155;border-left:8px solid #c4b5fd;
   border-radius:14px;padding:10px 16px;margin:8px 0;
   box-shadow:0 2px 8px rgba(0,0,0,.05);}
+/* Pestañas: siempre en rojo (activas o no) */
+.stApp button[data-baseweb="tab"] p,
+.stApp button[data-baseweb="tab"] {color:#ef4444 !important;font-weight:700;}
+.stApp button[data-baseweb="tab"][aria-selected="false"] {opacity:.75;}
+/* Títulos y textos: legibles aunque el móvil esté en modo oscuro */
+.stApp h2, .stApp h3, .stApp h4,
+.stApp h2 *, .stApp h3 *, .stApp h4 * {color:#5b21b6 !important;}
+.stApp [data-testid="stMarkdownContainer"] p,
+.stApp [data-testid="stMarkdownContainer"] li,
+.stApp [data-testid="stCaptionContainer"],
+.stApp label, .stApp label p {color:#334155 !important;}
+.stApp [data-testid="stMetricLabel"] *, .stApp [data-testid="stMetricValue"] * {color:#5b21b6 !important;}
+.stApp .titulo h1, .stApp .titulo p {color:white !important;}
+.stApp .tarjeta .rom {color:#7c3aed !important;}
+.stApp .tarjeta .num {color:#0ea5e9 !important;}
+.stApp .grande, .stApp .mini {color:#7c3aed !important;}
 </style>
 <div class="titulo">
   <h1>🦄 El Reino de los Números Romanos ✨</h1>
